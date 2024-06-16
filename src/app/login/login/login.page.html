@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-title>Login</ion-title>
     <ion-buttons slot="end">
       <ion-button size="small" class="deslogar" (click)="voltarStart()">
         <ion-icon name="return-up-back-outline"></ion-icon>
@@ -9,28 +9,25 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="content" color="primary" padding>
-  <form> <!-- form="ngForm" (ngSubmit)="entrar()" -->
+<ion-content class="content">
+  <form>
     <ion-grid>
-      <ion-row color="primary" justify-content-center>
-        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12" class="caixa" >
-          <div text-center>
+      <ion-row justify-content-center>
+        <ion-col size-md="6" size-lg="5" size-xs="12" class="caixa">
+          <div class="header">
             <h3>Login</h3>
           </div>
-          <div padding>
-            <ion-item>
-              <ion-input name="email" type="email" placeholder="Exemplo@email.com" [(ngModel)]="email"></ion-input>
+          <div class="form-group">
+            <ion-item lines="none">
+              <ion-input name="email" type="email" placeholder="Digite seu Email" [(ngModel)]="email" clearInput></ion-input>
             </ion-item>
-            <ion-item>
-              <ion-input name="password" type="password" placeholder="Senha" [(ngModel)]="senha"></ion-input>
+            <ion-item lines="none">
+              <ion-input name="password" type="password" placeholder="Digite sua senha" [(ngModel)]="senha" clearInput></ion-input>
             </ion-item>
           </div>
-          <div padding>
-            <ion-button class="button" size="large" type="submit" expand="block" (click)="loginUsuario()">Entrar</ion-button>
+          <div class="button-group">
+            <ion-button class="button" type="submit" expand="block">Entrar</ion-button>
           </div>
-          <!-- <div padding>
-            <ion-button class="button" size="large" type="submit" expand="block" (click)="voltarStart()">Voltar</ion-button>
-          </div> -->
         </ion-col>
       </ion-row>
     </ion-grid>

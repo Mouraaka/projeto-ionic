@@ -1,25 +1,52 @@
-.content {
-    --ion-background-color: #f0f0f0; /* Cor de fundo */
-}
-
-ion-item {
-    --background: #3880ff; /* Cor do item */
-    --color: #fff; /* Cor do texto */
-}
-
-ion-button {
-    --background: #062f77; /* Cor do botão */
-}
-
-form {
+ion-content {
+    --ion-background-color: #f0f0f0;
+  }
+  
+  ion-item {
+    --background: #222;
+    --color: #f0f0f0;
+    margin-top: 20px;
+  }
+  
+  ion-button {
+    --background: #cbcbcb;
+  }
+  
+  form {
     display: flex;
     justify-content: center;
-}
-
-.caixa {
+    align-items: center;
+    height: 100%;
+  }
+  
+  .caixa {
     width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #222;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .button-group {
     display: flex;
+    width: 100%;
     justify-content: center;
-    flex-direction: column;
-    height: 80vh;
-}
+    padding-top: 20px;
+  
+    .button {
+      width: 100%;
+      --background: #3880ff; // Cor do botão
+      --color: #fff; // Cor do texto do botão
+    }
+  }
+  

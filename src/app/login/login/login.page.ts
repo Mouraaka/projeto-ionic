@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {  ToastController  } from "@ionic/angular"
-import {  AutenticacaoService  } from 'src/app/usuario/autenticacao.service';
 
 @Component({
   selector: 'app-login',
@@ -16,18 +15,8 @@ export class LoginPage implements OnInit {
 
   constructor (
     public router: Router,
-    public autenticacaoService: AutenticacaoService,
     public toastController: ToastController
   ) { }
-
-  loginUsuario() {
-    this.autenticacaoService.loginNoFirebase(this.email, this.senha).then((res)=> {
-      this.router.navigate(['/home']);
-    }).catch((error) => {
-      this.mensagem = "E-mail ou senha incorretos"
-      this.exibeMensagem();
-    });
-  }
 
   async exibeMensagem() {
     const toast = await this.toastController.create({

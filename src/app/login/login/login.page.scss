@@ -1,31 +1,50 @@
-.content {
-    --ion-background-color: #f0f0f0; /* Altere para a cor desejada */
-}
-
-ion-item {
-    --background: #3880ff;
-    --color: #fff;
-}
-
-ion-button {
-    --background: #062f77;
-}
-
-form {
-    display: flex;
-    justify-content: center;
-}
-
-.caixa {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 80vh;
-}
-
-.deslogar {
-    --background: transparent;
-    --color: white;
-    margin: 0 12px;
+ion-content {
+    --ion-background-color: #f0f0f0;
   }
+  
+  ion-item {
+    --background: #222;
+    --color: #f0f0f0;
+    margin-top: 20px;
+  }
+  
+  ion-button {
+    --background: #cbcbcb;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .caixa {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #222;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .button-group {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 20px;
+        .button{
+            width: 100%;
+            --background: #3880ff ;
+        }
+  }
+

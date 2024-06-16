@@ -9,28 +9,25 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="content" padding>
- <form>    <!-- #form="ngForm" (ngSubmit)="cadastrar()" -->
+<ion-content class="content">
+  <form>
     <ion-grid>
       <ion-row justify-content-center>
         <ion-col size-md="6" size-lg="5" size-xs="12" class="caixa">
-          <div text-center>
+          <div class="header">
             <h3>Registro</h3>
           </div>
-          <div padding>
-            <ion-item>
-              <ion-input name="email" type="email" placeholder="Email" [(ngModel)]="email"></ion-input>
+          <div class="form-group">
+            <ion-item lines="none">
+              <ion-input name="email" type="email" placeholder="Digite seu Email" [(ngModel)]="email" clearInput></ion-input>
             </ion-item>
-            <ion-item>
-              <ion-input name="senha" type="password" placeholder="Senha" [(ngModel)]="senha"></ion-input>
+            <ion-item lines="none">
+              <ion-input name="senha" type="password" placeholder="Crie uma senha" [(ngModel)]="senha" clearInput></ion-input>
             </ion-item>
           </div>
-          <div padding>
-            <ion-button class="button" size="large" type="submit"  expand="block" (click)="insereUsuario()">Registrar</ion-button>
+          <div class="button-group">
+            <ion-button class="button" type="submit" expand="block">Registrar</ion-button>
           </div>
-          <!-- <div padding>
-            <ion-button class="button" size="large" type="submit" expand="block" (click)="voltarStart()">Voltar</ion-button>
-          </div> -->
         </ion-col>
       </ion-row>
     </ion-grid>
