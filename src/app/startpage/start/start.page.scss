@@ -1,0 +1,35 @@
+.toolbar {
+    --ion-background-color: #ffffff;
+  }
+  
+  .content {
+    --ion-background-color: #ffffff;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .card-div {
+    text-align: center;
+  }
+  
+  .logo {
+    width: 100px; /* Tamanho da imagem do ícone */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .app-title {
+    color: black;
+    font-size: 24px; /* Tamanho do título */
+  }
+  
+  .button-entrar {
+    --border-radius: 20px; /* Arredondando os cantos */
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar">
+    <ion-title class="header-title">NOME DO APP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content" [fullscreen]="true">
+  <div class="container">
+    <div class="card-div">
+      <!-- ICONE -->
+      <img class="logo" src="../../../assets/logo.png" alt="logo">
+      <h1 class="app-title">Bem-vindo ao NOME DO APP</h1>
+      <ion-button class="button-entrar" (click)="goToLogin()" color="primary">Logar</ion-button>
+      <ion-button class="button-entrar" (click)="goToRegister()" color="primary">Cadastrar</ion-button>
+    </div>
+  </div>
+</ion-content>

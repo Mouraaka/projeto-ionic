@@ -1,0 +1,46 @@
+<ion-header class="header" [translucent]="true">
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="start">
+      <ion-button size="small" class="back-button" (click)="voltar()">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title id="page-title">{{ giveawayDetails?.title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="content">
+  <ion-card class="card">
+    <div class="thumbnail">
+      <img [src]="giveawayDetails?.thumbnail" alt="Thumbnail">
+    </div>
+    <ion-card-header>
+      <ion-card-title class="cardTitle">{{ giveawayDetails?.title }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="card-content">
+      <ion-list lines="none">
+        <ion-item class="info-item">
+          <ion-label class="info-label">Status:</ion-label>
+          <ion-text class="info-value">{{ giveawayDetails?.status }}</ion-text>
+        </ion-item>
+        <ion-item class="info-item">
+          <ion-label class="info-label">Valor:</ion-label>
+          <ion-text class="info-value">{{ giveawayDetails?.worth }}</ion-text>
+        </ion-item>
+        <ion-item class="info-item">
+          <ion-label class="info-label">Plataformas:</ion-label>
+          <ion-text class="info-value">{{ giveawayDetails?.platforms }}</ion-text>
+        </ion-item>
+        <ion-label class="info-label-2">Descrição:</ion-label>
+        <ion-item class="info-item">
+          <ion-text class="info-value-2">{{ giveawayDetails?.description }}</ion-text>
+        </ion-item>
+        <ion-label class="info-label-2">Instruções:</ion-label>
+        <ion-item class="info-item">
+          <ion-text class="info-value-2">{{ giveawayDetails?.instructions }}</ion-text>
+        </ion-item>
+      </ion-list>
+      <ion-button expand="block" [href]="giveawayDetails?.open_giveaway_url" class="participar-btn">Participar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

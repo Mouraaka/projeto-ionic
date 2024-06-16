@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+    <ion-buttons slot="end">
+      <ion-button size="small" class="deslogar" (click)="voltarStart()">
+        <ion-icon name="return-up-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content" padding>
+ <form>    <!-- #form="ngForm" (ngSubmit)="cadastrar()" -->
+    <ion-grid>
+      <ion-row justify-content-center>
+        <ion-col size-md="6" size-lg="5" size-xs="12" class="caixa">
+          <div text-center>
+            <h3>Registro</h3>
+          </div>
+          <div padding>
+            <ion-item>
+              <ion-input name="email" type="email" placeholder="Email" [(ngModel)]="email"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="senha" type="password" placeholder="Senha" [(ngModel)]="senha"></ion-input>
+            </ion-item>
+          </div>
+          <div padding>
+            <ion-button class="button" size="large" type="submit"  expand="block" (click)="insereUsuario()">Registrar</ion-button>
+          </div>
+          <!-- <div padding>
+            <ion-button class="button" size="large" type="submit" expand="block" (click)="voltarStart()">Voltar</ion-button>
+          </div> -->
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>

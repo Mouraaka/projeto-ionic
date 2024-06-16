@@ -1,0 +1,25 @@
+.content {
+    --ion-background-color: #f0f0f0; /* Cor de fundo */
+}
+
+ion-item {
+    --background: #3880ff; /* Cor do item */
+    --color: #fff; /* Cor do texto */
+}
+
+ion-button {
+    --background: #062f77; /* Cor do botão */
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.caixa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+}

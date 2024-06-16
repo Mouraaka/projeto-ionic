@@ -1,0 +1,31 @@
+.content {
+    --ion-background-color: #f0f0f0; /* Altere para a cor desejada */
+}
+
+ion-item {
+    --background: #3880ff;
+    --color: #fff;
+}
+
+ion-button {
+    --background: #062f77;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.caixa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.deslogar {
+    --background: transparent;
+    --color: white;
+    margin: 0 12px;
+  }
