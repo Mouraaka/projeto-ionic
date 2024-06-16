@@ -1,19 +1,17 @@
-<ion-header [translucent]="true">
-  <ion-toolbar class="toolbar">
-    <ion-title class="header-title"></ion-title>
+<ion-header class="header" >
+  <ion-toolbar class="header" >
+    <ion-title class="header-title">Bem-vindo(a)</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="content" [fullscreen]="true">
   <div class="container">
-    <div class="card-div">
-      <!-- ICONE -->
-      <img class="logo" src="../../../assets/logo.png" alt="logo">
-      <h1 class="app-title">Bem-vindo(a)</h1>
-      <div class="button-group">
-        <ion-button class="button" (click)="goToLogin()" color="primary" expand="block">Logar</ion-button>
-        <ion-button class="button" (click)="goToRegister()" color="primary" expand="block">Cadastrar</ion-button>
-      </div>
+    <div class="logo-container">
+      <img class="logo" src="assets/logo.png" alt="logo">
     </div>
+  </div>
+  <div class="button-group">
+    <ion-button (click)="goToLogin()" color="primary" expand="block">Logar</ion-button>
+    <ion-button (click)="goToRegister()" color="primary" expand="block">Cadastrar</ion-button>
   </div>
 </ion-content>

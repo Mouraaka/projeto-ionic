@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AutenticacaoService } from 'src/app/usuario/autenticacao.service';
 import {  ToastController  } from "@ionic/angular"
 
 @Component({
@@ -15,8 +16,19 @@ export class LoginPage implements OnInit {
 
   constructor (
     public router: Router,
+    public autenticacaoService: AutenticacaoService,
     public toastController: ToastController
   ) { }
+
+  logar() {
+    this.autenticacaoService.loginFirebase(this.email, this.senha)
+      .then((res) => {
+        this.router.navigate(['/home'])
+      }).catch((error) => {
+        this.mensagem = 'Email e/ou Senha incorreto(s)'
+        this.exibeMensagem();
+      })
+  }
 
   async exibeMensagem() {
     const toast = await this.toastController.create({
@@ -32,9 +44,4 @@ export class LoginPage implements OnInit {
   voltarStart(){
     this.router.navigate(['/start']);
   }
-
-  // entrar(){
-  //   this.route.navigate(['/home']);
-  // }
-
 }

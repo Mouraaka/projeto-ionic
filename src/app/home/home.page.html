@@ -5,7 +5,7 @@
         <ion-icon slot="icon-only" name="people-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title id="page-title">Nome app</ion-title>
+    <ion-title id="page-title">xDgames</ion-title>
     <ion-buttons slot="end">
       <ion-button size="small" class="deslogar" (click)="deslogar()">
         <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
@@ -13,7 +13,7 @@
     </ion-buttons>
   </ion-toolbar>
   <ion-toolbar class="div_pesquisa" >
-    <ion-select [(ngModel)]="platform" (ionChange)="plataforma_selecionada()" justify="space-between" label="Plataforma" placeholder="Selecione a Plataforma">
+    <ion-select class="select" [(ngModel)]="platform" (ionChange)="plataforma_selecionada()" justify="space-between" label="Plataforma" placeholder="Selecione a Plataforma">
       <ion-select-option value="none">Nenhuma</ion-select-option>
       <ion-select-option value="pc">PC</ion-select-option>
       <ion-select-option value="ps4">PS4</ion-select-option>

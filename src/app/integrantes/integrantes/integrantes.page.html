@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar class="custom-header">
     <ion-buttons slot="start">
       <ion-button class="button_voltar" size="small" (click)="integrantes_voltar()" id="button-voltar">
         <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
@@ -9,39 +9,41 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">integrantes</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="custom-content">
+  <div class="header">
+    <div class="header-content">
+      <ion-title size="large"></ion-title>
+    </div>
+  </div>
   
   <div class="integrantes">
-    
-    <div class="membro_1">
-      <div class="membro_1_foto">
-        <img class="foto_1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQghl_LVWxmcW1az7SxoH2sYhfw5ZCg625bWJBM6ht3uQ&s">
-      </div>
-      <div class="membro_1_infos">
-        <h2>Rodrigo Ferreira</h2>
-      </div>
-    </div>
-
-    <div class="membro_2">
-      <div class="membro_2_infos">
-        <h2>Caio Ferreira</h2>
-      </div>
-      <div class="membro_2_foto">
-        <img class="foto_2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQghl_LVWxmcW1az7SxoH2sYhfw5ZCg625bWJBM6ht3uQ&s">
-      </div>
-    </div>
-
-    <div class="infos" >
-      <h1><strong>Turma:</strong></h1>
+    <div class="info-card">
+      <div class="info-content">
+        <h1><strong>Turma:</strong></h1>
         <p>ADS0302M / Manhã</p>
-      <h1><strong>Curso:</strong></h1>
-      <p>Análise e Desenvolvimento de Sistemas</p>
+        <h1><strong>Curso:</strong></h1>
+        <p>Análise e Desenvolvimento de Sistemas</p>
+      </div>
     </div>
 
+    <div class="membros">
+      <div class="membro-card">
+        <div class="membro-photo">
+          <img src="../../../assets/rodrigoFerreira.jpg" alt="Rodrigo Ferreira">
+        </div>
+        <div class="membro-info">
+          <h2>Rodrigo Ferreira</h2>
+        </div>
+      </div>
+
+      <div class="membro-card">
+        <div class="membro-info">
+          <h2>Caio Ferreira</h2>
+        </div>
+        <div class="membro-photo">
+          <img src="../../../assets/caioFerreira.jpg" alt="Caio Ferreira">
+        </div>
+      </div>
+    </div>
   </div>
 </ion-content>
