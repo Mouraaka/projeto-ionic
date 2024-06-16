@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-  private apiKey = 'd562be4e93mshdbb079fc5dd9b1bp181c5fjsne115f1654351';
+  private apiKey = // INSIRA A CHAVE DA API ;
   private apiUrl = 'https://gamerpower.p.rapidapi.com/api/giveaways';
   private idApiUrl = 'https://gamerpower.p.rapidapi.com/api/giveaway';  
 
