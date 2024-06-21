@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from './../service/api.service';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular'; 
-import { trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-home',
@@ -283,16 +282,22 @@ export class HomePage implements OnInit {
     });
     await alert.present();
   }
+  
+  integrantes() {
+    this.router.navigate(['/integrantes']);
+  }
+  
+  deslogar() {
+    this.router.navigate(['/start']);
+  }
 
   verMais(id: string) {
     this.router.navigate(['/vermais', id]);
   }
 
-  integrantes() {
-    this.router.navigate(['/integrantes']);
+  comparar() {
+
+    this.router.navigate(['/primeira-pag-comp'])
   }
 
-  deslogar() {
-    this.router.navigate(['/start']);
-  }
 }

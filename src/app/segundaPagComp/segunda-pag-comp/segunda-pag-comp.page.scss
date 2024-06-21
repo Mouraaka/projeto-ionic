@@ -1,0 +1,116 @@
+.header {
+    --ion-toolbar-background: #1f1f1f;
+  }
+  
+  .toolbar {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .select {
+    margin-left: 6px;
+  }
+  
+  .div_pesquisa{
+    padding-bottom: 10px;
+  }
+  
+  
+  .membros,
+  .deslogar {
+    --background: transparent;
+    --color: white;
+    margin: 0 12px;
+  }
+  
+  #page-title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+  }
+  
+  ion-icon {
+    font-size: 40px; 
+  }
+  
+  .content {
+   --ion-background-color: #222;
+  }
+  
+  .content_pesquisa{
+    --ion-background-color: rgb(196, 196, 196);
+  }
+  
+  .card {
+    margin: 16px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 11px 12px 3px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 11px 12px 3px rgba(0,0,0,0.43);
+    box-shadow: 0px 11px 12px 3px rgba(0,0,0,0.43);
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  ion-card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .details {
+    margin-top: 8px;
+  }
+  
+  ion-button {
+    --background: #3880ff;
+    --color: white;
+    margin-top: 8px;
+    border-radius: 8px;
+  }
+  
+  ion-button:hover {
+    --background: #3171e0;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .info-item {
+    --padding-start: 0;
+  }
+  
+  .info-label {
+    font-weight: bold;
+    color: #d1d1d1;
+  } 
+  
+  .info-value {
+    color: #d1d1d1;
+  }
+  
+  .ver-mais-btn {
+    --background: #3880ff;
+    --color: white;
+    margin-top: 16px;
+    border-radius: 8px;
+  }
+  
+  .ver-mais-btn:hover {
+    --background: #3171e0;
+  }
+  
+  .cardTitle{
+    text-align: center;
+  }
+  
+  .button-footer {
+    --color: white;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }

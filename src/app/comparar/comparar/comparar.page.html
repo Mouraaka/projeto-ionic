@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Comparar Ofertas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+
+      <ion-col class="col1" size="6">
+        <div class="offer-container" *ngIf="primeira_oferta">
+          <img [src]="primeira_oferta.image" alt="Imagem da Oferta">
+
+          <div class="div-title-1">
+            <h2 class="title1" >{{ primeira_oferta.title }}</h2>
+          </div>
+
+          <p><strong>Valor:</strong> {{ primeira_oferta.worth }}</p>
+          <p><strong>Plataformas:</strong> {{ primeira_oferta.platforms }}</p>
+          <p><strong>tipo:</strong> {{ primeira_oferta.type }}</p>
+          <p><strong>Status:</strong> {{ primeira_oferta.status }}</p>
+          <p><strong>usuários:</strong> {{ primeira_oferta.users }} </p>
+        </div>
+      </ion-col>
+
+      <ion-col class="col2" size="6">
+        <div class="offer-container" *ngIf="segunda_oferta">
+          <img [src]="segunda_oferta.image" alt="Imagem da Oferta">
+
+          <div class="div-title-2">
+            <h2 class="title2" >{{ segunda_oferta.title }}</h2>
+          </div>
+
+          <p><strong>Valor:</strong> {{ segunda_oferta.worth }}</p>
+          <p><strong>Plataformas:</strong> {{ segunda_oferta.platforms }}</p>
+          <p><strong>tipo:</strong> {{ segunda_oferta.type }}</p>
+          <p><strong>Status:</strong> {{ segunda_oferta.status }}</p>
+          <p><strong>usuários:</strong> {{ segunda_oferta.users }} </p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="footer-toolbar" >
+    <ion-button class="button-footer" size="large" expand="block" (click)="voltarMenu()">Voltar para o Menu!</ion-button>
+  </ion-toolbar>
+</ion-footer>
+

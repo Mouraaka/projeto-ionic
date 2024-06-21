@@ -1,0 +1,36 @@
+<ion-header class="header" [translucent]="true">
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="start">
+      <ion-button size="small" class="back-button" (click)="button_voltar()">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title id="page-title">Selecione a segunda giveaway</ion-title>
+    <ion-buttons slot="end">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="content" >
+  <ion-card class="card" *ngFor="let giveaway of giveaways">
+    <div class="thumbnail">
+      <img [src]="giveaway.image" alt="Thumbnail">
+    </div>
+    <ion-card-header class="cardHeader">
+      <ion-card-title class="cardTitle" >{{ giveaway.title }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="card-content">
+      <ion-list lines="none">
+        <ion-item class="info-item">
+          <ion-label class="info-label">Status:</ion-label>
+          <ion-text class="info-value">{{ giveaway.status }}</ion-text>
+        </ion-item>
+        <ion-item class="info-item">
+          <ion-label class="info-label">Preço:</ion-label>
+          <ion-text class="info-value">{{ giveaway.worth }}</ion-text>
+        </ion-item>
+      </ion-list>
+      <ion-button expand="block" class="ver-mais-btn" (click)="selecionar(giveaway.id)" >Selecionar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

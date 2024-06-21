@@ -31,6 +31,18 @@ const routes: Routes = [
     path: 'start',
     loadChildren: () => import('./startpage/start/start.module').then( m => m.StartPageModule)
   },
+  {
+    path: 'primeira-pag-comp',
+    loadChildren: () => import('./primeiraPagComp/primeira-pag-comp/primeira-pag-comp.module').then( m => m.PrimeiraPagCompPageModule)
+  },
+  {
+    path: 'segunda-pag-comp',
+    loadChildren: () => import('./segundaPagComp/segunda-pag-comp/segunda-pag-comp.module').then( m => m.SegundaPagCompPageModule)
+  },
+  {
+    path: 'comparar',
+    loadChildren: () => import('./comparar/comparar/comparar.module').then( m => m.CompararPageModule)
+  },
 ];
 
 @NgModule({
